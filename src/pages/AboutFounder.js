@@ -5,6 +5,7 @@ const AboutFounder = () => {
     
     <div style={{display:"flex"}}>
         <div>
+          <h1>founders</h1>
             <img src='https://www.seekpng.com/png/detail/361-3613488_microsoft-teams-people.png'></img>
         </div>
 

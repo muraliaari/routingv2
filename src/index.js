@@ -11,7 +11,7 @@ import About from './pages/About';
 import Aboutcompany from './pages/Aboutcompany';
 import AboutFounder from './pages/AboutFounder';
 import Contact from './pages/Contact';
-
+/*
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +31,36 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "contact",
+    element: <Contact/>,
+  },
+]);
+*/
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children:[
+      {
+        path: "about",
+        element: <About/>,
+        children:[
+          {
+            path:"company",
+            element:<Aboutcompany/>
+          },
+          {
+            path:"founders",
+            element:<AboutFounder/>
+          }
+        ]
+      },
+
+    ]
+  },
+  
   {
     path: "contact",
     element: <Contact/>,
