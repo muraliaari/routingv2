@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import Show from './Show'
+import Showit from './Showit'
+
 
 
 
@@ -36,7 +37,7 @@ const Input = () => {
         <h1>My ToDo</h1>
         <input type="text" className='form-control' onChange={handleChange}/>
         <button className='btn-btn-info' onClick={addTodo}>AddTodo</button>
-        <Show/>
+        <Showit/>
         
     </div>
     </div>
