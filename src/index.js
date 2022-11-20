@@ -11,6 +11,7 @@ import About from './pages/About';
 import Aboutcompany from './pages/Aboutcompany';
 import AboutFounder from './pages/AboutFounder';
 import Contact from './pages/Contact';
+import ToDo from './pages/ToDo';
 /*
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     element: <App/>,
     children:[
       {
+        path: "todo",
+        element: <ToDo/>,
+      },
+      {
         path: "about",
         element: <About/>,
         children:[
@@ -65,6 +70,7 @@ const router = createBrowserRouter([
     path: "contact",
     element: <Contact/>,
   },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
